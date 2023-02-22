@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  flex-direction: column;
+}
+.container {
+  background-color: hsl(215, 32%, 27%);
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px;
+}
+.picture {
+  /* background-image: url("./images/image-equilibrium.jpg"); */
+  background-size: cover;
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.picture img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.hover__item {
+  background-color: hsl(178, 100%, 50%);
+  /* border: 2px solid red; */
+  opacity: 0;
+  transition: opacity .4s ease-in-out;
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+}
+.hover__item:hover{
+  cursor: pointer;
+  opacity: .7; 
+}
+
+.header {
+  color: hsl(0, 0%, 100%);
+  margin: 20px 0px;
+}
+.header:hover {
+  color: hsl(178, 100%, 50%);
+}
+.paragraph {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+}
+
+.icon {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon__item1 {
+  color: hsl(178, 100%, 50%);
+  font-size: 18px;
+}
+
+.icon__item2 {
+  color: hsl(215, 51%, 70%);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mypicture img {
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.footer__item {
+  font-size: 18px;
+}
+.color1 {
+  color: hsl(215, 51%, 70%);
+}
+
+.color2 {
+  color: aliceblue;
+}
+.color2:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+@media screen and (min-width: 400px) {
+  .container {
+    width: 300px;
+  }
+}
